@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    hello world
+
+    <div style="text-align: center;">
+        <h1>Calculatrice</h1>
+
+        <div>
+            <input id="a" class="val" type="text" placeholder="Saisir la valeur a">
+        </div>
+        <div>
+            <input id="b" class="val" type="text" placeholder="Saisir la valeur b">
+        </div>
+
+        <div>
+            <button class="val btn" onclick="addition(transform(document.getElementById('a').value), transform(document.getElementById('b').value))">
+                Calculer
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
